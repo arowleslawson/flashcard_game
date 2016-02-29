@@ -4,15 +4,153 @@
         <meta charset="utf-8">
         <title>Flash Card Game</title>
         <style>
+            body{
+                background: rgb(212, 238, 250);
+                font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+            }
+            .heading{
+                background-color:rgb(129, 204, 240);
+                width:95%;
+                color:rgb(29, 72, 93);
+                margin:auto;
+                text-indent:10px;
+                border: 2px double rgb(29, 72, 93);
+                margin-bottom:20px;
+            }
+            .game-box{
+                background-color: rgb(129, 204, 240);
+                width:95%;
+                height: 500px;
+                margin:auto;
+                border: 2px ridge rgb(29, 72, 93);
+            }
+            
+            #skip-button{ 
+                    }
+            #hint-button{
+                        }
+            .game-button{
+                background-color: rgb(62, 92, 107);
+                width:29.8%;
+                height:20px;
+                margin-left:2.1%;
+                margin-top:3px;
+                margin-bottom:20px;
+                text-align:center;
+                line-height: 0px;
+                position:relative;
+                top:75%;
+                float:left;
+                border:2px outset rgb(29, 72, 93);
+                color:rgb(212, 238, 250);
+            }
+            
+            
+            #instructions-button{left: 32%; }
+            #options-button{ left: 64%; }
+            #comments-button{left: 96%; }
+            
+            .button{
+                background-color: rgb(255, 194, 124);
+                width:29.8%;
+                height:30px;
+                line-height: 0;
+                margin-left:2.1%;
+                margin-top:3px;
+                margin-bottom:20px;
+                text-align:center;
+                position:relative;
+                float: left;
+                border:2px outset rgb(168, 134, 95);
+                color:rgb(146, 97, 40);
+            }
+            
+            #score{
+                position:relative;
+                left:87%;
+                top:-3%;
+            }
+            #level{
+                position:relative;
+                top:-10.5%;
+                left:1%;
+            }
+            #game-area{
+                position:relative;
+                top:-12%;
+                border:2px solid black;
+                width:90%;
+                height:85%;
+                margin:auto;
+            }
+            #game-input{
+                border:1px solid black;
+                width:50%;
+                height:8%;
+                line-height:0;
+                position:relative;
+                top:80%;
+                left:20%;
+                text-indent:2px;
+            }
+            .enter-button{
+                border:1px solid black;
+                width:9%;
+                height:5%;
+                line-height:10%;
+                position:absolute;
+                left:60%;
+                top:87%;
+                border:2px outset rgb(168, 134, 95);
+                color:rgb(146, 97, 40);
+                background-color: rgb(255, 194, 124);
+            }
             
         </style>
     </head>
     <body>
         
-        <h1>Interactive Flash Card Game</h1>
-        <h2>Learn Something New</h2>
+        <div class="heading">
+            <h1>Interactive Flash Card Game</h1>
+            <p> A LearnIT Girl Project</p>
+        </div>
         
-        <p>Stuff</p>
+        <div class="game-box">
+            <div id="score">
+                <p> Score: 0 </p>
+            </div>
+            <div id="level">
+                <p> Level:1 </p>
+            </div>
+            <div class="game-button">
+                <p id="hint-button"> Hint </p>
+            </div>
+            <div class="game-button">
+                <p id="skip-button"> Skip </p>
+            </div>
+            <div id="game-area">
+                GAME AREA
+                <div class="enter-button">
+                    <p> Enter</p>
+                </div>
+                <div id="game-input">
+                    <p> Enter your answer!</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="button">
+            <div id="left-button">
+                <p id="instructions-button">Instructions</p>
+            </div>
+        </div>
+        <div class="button">
+            <p id="comments-button">Comments</p>
+        </div>
+        <div class="button">
+            <p id="options-button">Options</p>
+        </div>
         
         
     
